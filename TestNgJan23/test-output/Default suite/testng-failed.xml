@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Day1.SalesforceWebpageTestNg">
+        <methods>
+          <include name="HomeTabTC33"/>
+          <include name="Opportunity_CreateNewTC16"/>
+          <include name="RemoveTabTC35"/>
+          <include name="TodaysLeadsTabTC23"/>
+          <include name="HomeTabEditProfileTC34"/>
+          <include name="wrong_username_passwordTC04"/>
+        </methods>
+      </class> <!-- Day1.SalesforceWebpageTestNg -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
