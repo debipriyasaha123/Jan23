@@ -116,22 +116,23 @@ public class SalesforceWebpageTestNg extends ReusableMethods{
 		usermenue.click();
 		WebElement myProfile = driver.findElement(By.xpath("//a[@title='My Profile']"));
 		myProfile.click();
-		WebElement userActionMenue = driver.findElement(By.xpath("//a[@id='moderatorMutton']"));
+		/*WebElement userActionMenue = driver.findElement(By.xpath("//a[@id='moderatorMutton']"));
 		userActionMenue.click();
-		/*WebElement editProfile = driver.findElement(By.xpath("//a[@title='Edit Profile']"));
+		WebElement editProfile = driver.findElement(By.xpath("//a[@title='Edit Profile']"));
 		editProfile.click();
-		WebElement frame1 = driver.findElement(By.xpath("//*[@id='contactInfoContentId']"));
+		Thread.sleep(4000);
+		WebElement frame1 = driver.findElement(By.xpath("//*[@id='aboutMeContentId']"));
 		driver.switchTo().frame(frame1);
-		WebElement about = driver.findElement(By.xpath("//a[normalize-space()='About']"));
+		WebElement about = driver.findElement(By.xpath("//*[@role='tab' and contains(text(),'About')]"));
 		about.click();
 		WebElement lastName = driver.findElement(By.xpath("//input[@id='lastName']"));
 		lastName.clear();
 		lastName.sendKeys("Saha");
 		Thread.sleep(4000);
 		WebElement save = driver.findElement(By.xpath("//*[@value = 'Save All']"));
-		save.click();
+		save.click();*/
 		driver.switchTo().defaultContent();
-		Thread.sleep(4000);*/
+		Thread.sleep(4000);
 		WebElement postField = driver.findElement(By.xpath("//span[text()='Post']"));
 		postField.click();
 		WebElement postFrame = driver.findElement(By.xpath("//*[@title = 'Rich Text Editor, publisherRichTextEditor']"));
@@ -1171,6 +1172,7 @@ public class SalesforceWebpageTestNg extends ReusableMethods{
 		Save.click();
 		Thread.sleep(6000);
 	    driver.close();	
+	    driver.quit();
 	}
 	
 	

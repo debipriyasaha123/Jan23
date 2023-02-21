@@ -14,7 +14,7 @@ static WebDriver driver = null;
 public static void GetDriverInstance (String browserName) {
 		
 		switch(browserName) {
-		case "edge":    WebDriverManager.edgedriver().setup();
+		case "edge":       WebDriverManager.edgedriver().setup();
 		                   driver = new EdgeDriver();
 		                   driver.manage().window().maximize();
 		                   break;

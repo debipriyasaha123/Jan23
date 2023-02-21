@@ -5,12 +5,7 @@
     <classes>
       <class name="Day1.SalesforceWebpageTestNg">
         <methods>
-          <include name="HomeTabTC33"/>
-          <include name="Opportunity_CreateNewTC16"/>
-          <include name="RemoveTabTC35"/>
-          <include name="TodaysLeadsTabTC23"/>
-          <include name="HomeTabEditProfileTC34"/>
-          <include name="wrong_username_passwordTC04"/>
+          <include name="myProfile_EditTC06"/>
         </methods>
       </class> <!-- Day1.SalesforceWebpageTestNg -->
     </classes>

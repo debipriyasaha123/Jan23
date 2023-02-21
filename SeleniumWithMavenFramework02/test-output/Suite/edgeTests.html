@@ -1,0 +1,1638 @@
+<html>
+<head>
+<title>TestNG:  edgeTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>edgeTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/35</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 20 19:21:04 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (123 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTest()'><b>setUpBeforeTest</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1628551735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1628551735'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTest()'><b>teardownAfterTest</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.teardownAfterTestMethod()'><b>teardownAfterTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.setUpBeforeTestMethod()'><b>setUpBeforeTestMethod</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td></td>
+<td>-1676938864</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.RecentlyCreatedTC27()'><b>RecentlyCreatedTC27</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace815336475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace815336475'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Opportunity_StuckTC18()'><b>Opportunity_StuckTC18</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1060519157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1060519157'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.developersConsoleTC08()'><b>developersConsoleTC08</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace702999333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace702999333'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.MyContactsTC28()'><b>MyContactsTC28</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1358857082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358857082'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Account_Edit_viewTC12()'><b>Account_Edit_viewTC12</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1527882132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1527882132'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.CreateContactCancleTC31()'><b>CreateContactCancleTC31</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597364637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597364637'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.mySettingsTC07()'><b>mySettingsTC07</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2117642238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2117642238'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Merge_AccountTC13()'><b>Merge_AccountTC13</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace176955204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace176955204'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.HomeTabTC33()'><b>HomeTabTC33</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace505231702", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace505231702'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Account_ReportTC14()'><b>Account_ReportTC14</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace300604602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace300604602'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.NewLeadsTabTC24()'><b>NewLeadsTabTC24</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398260359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398260359'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.ContactErrorMassegeTC30()'><b>ContactErrorMassegeTC30</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1456061400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1456061400'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Account_viewTC11()'><b>Account_viewTC11</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1171255580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1171255580'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.TodaysLeadsTabTC23()'><b>TodaysLeadsTabTC23</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1043639521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1043639521'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.LeadsTabTC20()'><b>LeadsTabTC20</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace79919963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace79919963'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.ContactsTabTC25()'><b>ContactsTabTC25</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace259630944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace259630944'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.QuarterlySummeryTC19()'><b>QuarterlySummeryTC19</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace464649704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace464649704'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.myProfile_EditTC06()'><b>myProfile_EditTC06</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1088491512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1088491512'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.ChangeLeadsTabTC22()'><b>ChangeLeadsTabTC22</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658512704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658512704'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.HomeTabTC36()'><b>HomeTabTC36</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1408533352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1408533352'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.usermenue_DropdownTC05()'><b>usermenue_DropdownTC05</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2029754983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2029754983'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.HomeTabEditProfileTC34()'><b>HomeTabEditProfileTC34</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737104370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737104370'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.ViewContactsTC29()'><b>ViewContactsTC29</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1306794745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1306794745'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.wrong_username_passwordTC04()'><b>wrong_username_passwordTC04</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace194415222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace194415222'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.error_loginTC01()'><b>error_loginTC01</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace951988316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951988316'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Opportunity_CreateNewTC16()'><b>Opportunity_CreateNewTC16</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1113895488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1113895488'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.CtreateNewContactsTC26()'><b>CtreateNewContactsTC26</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515273883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515273883'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Opportunity_DropdownTC15()'><b>Opportunity_DropdownTC15</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1807176280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1807176280'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.RemoveTabTC35()'><b>RemoveTabTC35</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767436045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767436045'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.usermenueLogoutTC09()'><b>usermenueLogoutTC09</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace837246227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace837246227'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.Opportunity_PipelineTC17()'><b>Opportunity_PipelineTC17</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace662925691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace662925691'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.createAccountTC10()'><b>createAccountTC10</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace811562535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace811562535'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.loginTC02()'><b>loginTC02</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace842331982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace842331982'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.NewContactPageTC32()'><b>NewContactPageTC32</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1558395480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1558395480'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+<tr>
+<td title='com.SeleniumwithMaven.SalesforceWebpageWithTestNg.OpenLeadsTabTC21()'><b>OpenLeadsTabTC21</b><br>Test class: com.SeleniumwithMaven.SalesforceWebpageWithTestNg</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213871206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1213871206'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeTest annotated setUpBeforeTest.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.SeleniumwithMaven.SalesforceWebpageWithTestNg@55183b20</td></tr>
+</table><p>
+</body>
+</html>
