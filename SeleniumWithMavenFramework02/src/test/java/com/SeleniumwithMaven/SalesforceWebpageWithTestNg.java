@@ -24,7 +24,7 @@ public class SalesforceWebpageWithTestNg extends BaseTest{
 	public void loginTC02() throws InterruptedException, IOException {
 		
 		logger.info("Inside login method");
-		extentreport.logTestInfo("Inside login method");
+		//extentreport.logTestInfo("Inside login method");
 		PropertiesUtility propertiesUtility =new PropertiesUtility();
 		propertiesUtility.loadFile("applicationDataProperties");
 		String username=propertiesUtility.getPropertyValue("login.valid.username");

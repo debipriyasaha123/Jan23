@@ -11,8 +11,10 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentReportsUtility {
 	public static ExtentReports report;
 	public static ExtentSparkReporter spartReporter;
-	public static ExtentTest testLogger;
-	private static ExtentReportsUtility extentObject = null;
+	public static ExtentTest testLogger=null;
+	private static ExtentReportsUtility extentObject=null;
+	
+	
 	
 	private ExtentReportsUtility() {
 	
@@ -41,9 +43,11 @@ public class ExtentReportsUtility {
 	
 	public void startSingleTestReport(String testScript_Name) {
 		testLogger=report.createTest(testScript_Name);
+		System.out.println("testlogger created in the extent report");
 	}
 	
-	public static void logTestInfo(String text) {
+	public  void logTestInfo(String text) {
+		System.out.println("test logger logging info message");
 		testLogger.info(text);
 	}
 	public void logTestpassed(String testcaseName) {

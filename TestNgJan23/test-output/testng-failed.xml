@@ -5,7 +5,7 @@
     <classes>
       <class name="Day1.SalesforceWebpageTestNg">
         <methods>
-          <include name="myProfile_EditTC06"/>
+          <include name="loginTC02"/>
         </methods>
       </class> <!-- Day1.SalesforceWebpageTestNg -->
     </classes>

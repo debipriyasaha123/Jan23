@@ -4,18 +4,20 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import com.jan23.utility.ExtentReportsUtility;
 
 import com.jan23base.BaseTest;
 
 public class TestEventListenersUtility implements ITestListener{
 
-	protected static ExtentReportsUtility extentreport = null;
+	protected static ExtentReportsUtility extentreport = ExtentReportsUtility.getInstance();
 	protected WebDriver driver;
 	
 	@Override
 	public void onTestStart(ITestResult result) {
 	//before each test start
 		extentreport.startSingleTestReport(result.getMethod().getMethodName());
+		System.out.println("on test start listener");
 	}
 
 	@Override
@@ -37,6 +39,7 @@ public class TestEventListenersUtility implements ITestListener{
 	//before all test start	
 		extentreport = ExtentReportsUtility.getInstance();
 		extentreport.startExtentReport();
+		System.out.println("inside onStart listener");
 	}
 
 	@Override

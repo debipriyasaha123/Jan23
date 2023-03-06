@@ -35,31 +35,34 @@ import com.jan23.utility.ExtentReportsUtility;
 import com.jan23.utility.PropertiesUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class BaseTest {
 	
 	protected static WebDriver driver = null;
 	protected static WebDriverWait wait = null;
 	protected static Logger logger = null;
-	protected static ExtentReportsUtility extentreport = ExtentReportsUtility.getInstance() ;
+	protected ExtentReportsUtility extentreport = ExtentReportsUtility.getInstance() ;
 	
 	@BeforeTest
-	public void setUpBeforeTest(ExtentReportsUtility extentreport) {
-		extentreport.logTestInfo("Before test method has started");
+	public void setUpBeforeTest() {
+		//extentreport.logTestInfo("Before test method has started");
 		//System.out.println("inside @Before test method");
 		logger = LogManager.getLogger(BaseTest.class.getName());
+		//extentreport.startExtentReport();
+		System.out.println("inside beforeTest method");
 	
 	}
 	
 	@AfterTest
 	public void teardownAfterTest() {
-		extentreport.endReport();	
+		//extentreport.endReport();	
 	}
 	
-	//@BeforeMethod
+	@BeforeMethod
 	@Parameters("browserName")
-	public void setUpBeforeTestMethod(@Optional("chrome")String browserName, Method method, ExtentReportsUtility extentreport) {
+	public void setUpBeforeTestMethod(@Optional("chrome")String browserName, Method method) {
 		logger.info("started testscript name" + method.getName());
-		extentreport.logTestInfo("started testscript name" +  method.getName());
+		//extentreport.logTestInfo("started testscript name" +  method.getName());
 		
 		PropertiesUtility propertiesUtility = new PropertiesUtility();
 		propertiesUtility.loadFile("applicationDataProperties");
@@ -73,7 +76,7 @@ public class BaseTest {
 		driver.close();	
 	}
 	
-	public static void enterText(WebElement element, String text, String name) {
+	public  void enterText(WebElement element, String text, String name) {
 		if (element.isDisplayed()) {
 			clearElement(element, name);
 			element.sendKeys(text);
@@ -89,7 +92,7 @@ public class BaseTest {
 		driver.getTitle();
 	}	
 	
-	private static void clearElement(WebElement element, String objName) {
+	private  void clearElement(WebElement element, String objName) {
 		if (element.isDisplayed()) {
 			element.clear();
 			logger.info("pass" + objName + "element cleared");
@@ -101,7 +104,7 @@ public class BaseTest {
 		}
 		
 	}
-	private static void clickElement(WebElement element, String objName) {
+	private  void clickElement(WebElement element, String objName) {
 		if (element.isDisplayed()) {
 			element.click();
 			logger.info("pass" + objName + "element clicked");
@@ -113,7 +116,7 @@ public class BaseTest {
 		}
 	}
 	
-	public static  Alert switchToAlert() {
+	public  Alert switchToAlert() {
 		
 		WaitUntilAlertIsPresent();
 		Alert alert = driver.switchTo().alert();
@@ -122,21 +125,21 @@ public class BaseTest {
 		return alert;
 	}
 	
-	public static void AcceptAlert(Alert alert) {
+	public void AcceptAlert(Alert alert) {
 		
 		logger.info("Alert accepted");
 		extentreport.logTestInfo("Alert accepted");
 		return;
 	}
 	
-	public static String getAlertText(Alert alert) {
+	public String getAlertText(Alert alert) {
 		
 		logger.info("extracting text in the alert");
 		extentreport.logTestInfo("extracting text in the alert");
 		return alert.getText();
 	}
 	
-	public static void dismisAlert() {
+	public void dismisAlert() {
 		
 		WaitUntilAlertIsPresent();
 		Alert alert = switchToAlert();
@@ -145,7 +148,7 @@ public class BaseTest {
 		extentreport.logTestInfo("Alert dismissed");
 	}
 	
-	public static void selectByTextData(WebElement element, String text, String objName) {
+	public void selectByTextData(WebElement element, String text, String objName) {
 		
 		Select selectObject = new Select (element);
 		selectObject.selectByVisibleText(text);
@@ -153,7 +156,7 @@ public class BaseTest {
 		extentreport.logTestInfo(objName +"selected" + text);
 	}
 	
-    public static void selectByIndexData(WebElement element, int index, String objName) {
+    public void selectByIndexData(WebElement element, int index, String objName) {
 		
 		Select selectObject = new Select (element);
 		selectObject.selectByIndex(index);
@@ -161,7 +164,7 @@ public class BaseTest {
 		extentreport.logTestInfo(objName +"selected");
     }
     
-   public static void selectByValueData(WebElement element, String text, String objName) {
+   public void selectByValueData(WebElement element, String text, String objName) {
 		
 		Select selectObject = new Select (element);
 		selectObject.selectByValue(text);
@@ -169,29 +172,30 @@ public class BaseTest {
 		extentreport.logTestInfo(objName +"selected");
    }
 	
-    public static void goToUrl (String url) {
+    public void goToUrl (String url) {
     	logger.info("going to the url=" + url);
-    	extentreport.logTestInfo("going to the url=" + url);
+    	//extentreport.logTestInfo("going to the url=" + url);
+    	System.out.println("going tothe url");
     	driver.get(url);
 	}
-	public static void closeBrowser() {
+	public void closeBrowser() {
 		logger.info("closing the browser");
 		extentreport.logTestInfo("closing the browser");
 		driver.close();
 	}
 	
-	public static String getPageTitle() {
+	public String getPageTitle() {
 		logger.info("getting the page title");
 		extentreport.logTestInfo("getting the page title");
 		return driver.getTitle();
 	}
 	
-	public static void refreshPage() {
+	public void refreshPage() {
 		logger.info("reffrershing page");
 		extentreport.logTestInfo("reffrershing page");
 		driver.navigate().refresh();
 	}
-	public static void waitUntilPageLoads() {
+	public void waitUntilPageLoads() {
 		logger.info("wait until page load");
 		extentreport.logTestInfo("wait until page load");
 		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
@@ -201,19 +205,19 @@ public class BaseTest {
 		return driver;
 	}
 	
-	public static void WaitUntilElementIsVisible(WebElement ele, String objName ) {
+	public void WaitUntilElementIsVisible(WebElement ele, String objName ) {
 		logger.info("waiting for an webelement"+ objName + "for its visibility");
 		extentreport.logTestInfo("waiting for an webelement"+ objName + "for its visibility");
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(ele));
 	}
-   public static void WaitUntilAlertIsPresent() {
+   public void WaitUntilAlertIsPresent() {
 		logger.info("waiting for alert to be present");
 		extentreport.logTestInfo("waiting for alert to be present");
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
-   public static void WaitUntilElementToBeClickable(By locator, String objName ) {
+   public void WaitUntilElementToBeClickable(By locator, String objName ) {
 		logger.info("waiting for an webelement"+ objName + "to be clickable");
 		extentreport.logTestInfo("waiting for an webelement"+ objName + "to be clickable");
 		wait = new WebDriverWait(driver, 30);
@@ -221,11 +225,11 @@ public class BaseTest {
 	}
    
 	
-	public static void GetDriverInstance (String browserName) {
+	public void GetDriverInstance (String browserName) {
 		
 		switch(browserName) {
-		case "edge":    WebDriverManager.firefoxdriver().setup();
-		                   driver = new FirefoxDriver();
+		case "edge":    WebDriverManager.edgedriver().setup();
+		                   driver = new EdgeDriver();
 		                   driver.manage().window().maximize();
 		                   break;
 		                
@@ -239,7 +243,7 @@ public class BaseTest {
 		}
 	}
 	
-	public static String getTextFromWebElement(WebElement element, String name) {
+	public String getTextFromWebElement(WebElement element, String name) {
 		if (element.isDisplayed()) {
 		return element.getText();
 		}
@@ -250,7 +254,7 @@ public class BaseTest {
 		}
 	}
 		
-	public static void GoToUrl(String url) {
+	public void GoToUrl(String url) {
 		logger.info("go to URL");
 		extentreport.logTestInfo("go to URL");
 		driver.get(url);
@@ -266,7 +270,7 @@ public class BaseTest {
 	    driver.getTitle();
 	}*/
 	
-	public static String getScreenShotOfThePage(WebDriver driver) {
+	public String getScreenShotOfThePage(WebDriver driver) {
 		
 		//random value + date()+testcase name ---> filename
 		String date = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());

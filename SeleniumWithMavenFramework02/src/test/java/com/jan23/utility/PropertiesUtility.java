@@ -8,10 +8,10 @@ import java.util.Properties;
 
 public class PropertiesUtility {
 	
-	private FileInputStream stream=null;
-	private Properties propertyFile=null;
+	private static FileInputStream stream=null;
+	private static Properties propertyFile=null;
 	
-	public  Properties loadFile(String filename){
+	public static Properties loadFile(String filename){
 		propertyFile = new Properties();
 		String  PropertyFilePath=null;
 		switch(filename) {
