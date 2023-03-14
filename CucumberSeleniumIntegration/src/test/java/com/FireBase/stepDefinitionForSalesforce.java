@@ -19,22 +19,22 @@ public class stepDefinitionForSalesforce {
 	  
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.salesforce.com/login/");
 		driver.manage().window().maximize();
+		driver.get("https://www.salesforce.com/login/");
+		
 	}
 	@When("i enter username and password")
 	public void i_enter_username_and_password() throws InterruptedException {
 	  
 		Thread.sleep(5000);
-		/*By idLoc = By.id("username");
-		WebElement Username = driver.findElement(By.id("username"));
+		//By idLoc = By.id("username");
+		WebElement Username = driver.findElement(By.xpath("//span[@id='idcard-identity']"));
 		Username.sendKeys("debipriya_1@tekarch.com");
-		//enterText (username, "debipriya_1@tekarch.com", "usernameEle");
 		WebElement Password = driver.findElement(By.id("password"));
 		Password.sendKeys("tuktuki123");
-		//enterText (password, "tuktuki123", "passwordEle");*/
 		
-		By idLoc = By.id("username");
+		
+		/*By idLoc = By.id("username");
 		WebElement username = driver.findElement(idLoc);
 		if(username.isDisplayed()) {
 			username.clear();
@@ -48,7 +48,7 @@ public class stepDefinitionForSalesforce {
 			password.sendKeys("tuktuki123");
 		}else {
 			System.out.println("The password element is not displayed");
-		}
+		}*/
 		
 		
 		

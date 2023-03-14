@@ -1,4 +1,4 @@
-Feature: login functionality
+Feature: login functionality for firebase
 
  Scenario: login with correct credentials
  Given application is up and running and in loginpage

@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-06T21:26:54 EST" name="Default suite" finished-at="2023-03-06T21:27:01 EST" duration-ms="7491">
+  <suite started-at="2023-03-07T11:59:42 EST" name="Default suite" finished-at="2023-03-07T11:59:49 EST" duration-ms="7363">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FireBase.runnerForSalesaforce@1b7cc17c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-03-06T21:26:54 EST" name="Default test" finished-at="2023-03-06T21:27:01 EST" duration-ms="7491">
+    <test started-at="2023-03-07T11:59:42 EST" name="Default test" finished-at="2023-03-07T11:59:49 EST" duration-ms="7363">
       <class name="com.FireBase.runnerForSalesaforce">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.FireBase.runnerForSalesaforce@1b7cc17c]" started-at="2023-03-06T21:26:54 EST" name="setUpClass" finished-at="2023-03-06T21:26:54 EST" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.FireBase.runnerForSalesaforce@1b7cc17c]" started-at="2023-03-07T11:59:42 EST" name="setUpClass" finished-at="2023-03-07T11:59:42 EST" duration-ms="189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FireBase.runnerForSalesaforce@1b7cc17c]" started-at="2023-03-06T21:26:54 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-06T21:27:01 EST" duration-ms="7245" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FireBase.runnerForSalesaforce@1b7cc17c]" started-at="2023-03-07T11:59:42 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-07T11:59:49 EST" duration-ms="7117" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["login functionality"]]>
+                <![CDATA["login functionality for salesforce"]]>
               </value>
             </param>
           </params>
@@ -40,15 +40,15 @@
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at com.FireBase.stepDefinitionForSalesforce.i_enter_username_and_password(stepDefinitionForSalesforce.java:38)
-at ✽.i enter username and password(file:///C:/eclipse-workspace/CucumberSeleniumIntegration/src/test/resources/salesforcefeature.feature:5)
+at com.FireBase.stepDefinitionForSalesforce.i_enter_username_and_password(stepDefinitionForSalesforce.java:31)
+at ✽.i enter username and password(file:///C:/Users/tanmo/git/repository/CucumberSeleniumIntegration/src/test/resources/salesforcefeature.feature:5)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.FireBase.runnerForSalesaforce@1b7cc17c]" started-at="2023-03-06T21:27:01 EST" name="tearDownClass" finished-at="2023-03-06T21:27:01 EST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.FireBase.runnerForSalesaforce@1b7cc17c]" started-at="2023-03-07T11:59:49 EST" name="tearDownClass" finished-at="2023-03-07T11:59:49 EST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
